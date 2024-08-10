@@ -1,0 +1,152 @@
+html{
+    font-size: 62.5%;   /*1rem = 10px*/
+}
+
+
+:root{
+    --primary-color: rgba(102, 236, 236, 0.993);
+    --primary-color-dark:lightseagreen; 
+    --secondary-color: aquamarine;
+    --text-dark:black;
+    --text-light: grey;
+    --extra-light:white;
+
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+a:hover{
+color: var(--primary-color-dark);
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+   
+}
+nav{
+    width: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white ;
+    align-items: baseline;
+    z-index: 99;
+    
+}
+.contNav{
+    
+    margin:auto;
+    padding:1rem 1rem;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+nav .logo a{
+    font-size:  4rem;
+    font-weight: 500;
+    color:var(--primary-color);
+    transition: 0.3s;
+}
+nav .logo a:hover{
+    color:var(--primary-color-dark);
+}
+#check{
+    display: none;
+}
+nav .checkbox, nav input{
+    display: none;
+}
+
+nav .checkbox i{
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor:pointer;
+
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    transition: left;
+    margin-left: 90rem ;
+}
+ul li a{
+    padding: auto;
+    border:2rem solid transparent;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-dark);
+    transition:0.5s;
+    
+}
+nav ul li {
+    font-size: 2rem; ;
+
+}
+section{
+    text-align: center;
+    background-color: var(--extra-light);
+    justify-content: space-around;
+    margin: auto;
+    padding: 10rem;
+    max-width: 1200
+    
+}
+.subtitle{
+    color: var(--text-light);
+    margin-top: 5rem;
+    margin-right: 25rem;
+    font-size: 2rem;
+    
+}
+.title{
+    margin-top: 1rem;
+}
+.title span{
+    color: var(--primary-color-dark);
+    border-color:var(--text-dark);
+    
+}
+button{
+    background:none ;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    color:var(--primary-color)
+    
+}
+button:hover{
+    background: var(--primary-color-dark);
+}
+.button{
+   
+    margin-bottom: 2rem;
+}
+
+.description{
+    color: var(--text-light);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+#img{
+    max-width: 100;
+    height: auto;
+    border-radius:50%;
+    filter:grayscale(100)
+    
+ }
+ 
+.contacto,.proyectos{
+    color: var(--secondary-color);
+}
