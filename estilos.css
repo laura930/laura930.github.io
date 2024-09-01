@@ -43,11 +43,13 @@ nav{
 }
 .contNav{
     
+    width: 100vw; /*arregla problema de poryectos contacto ajustandolos al ancho de la pantalla*/
     margin:auto;
-    padding:1rem 1rem;
+    padding:2rem 1rem 2rem 2rem; /*sentido horario: arriba derecha abajo izquerda*/
     display: flex;
     align-items:center;
     justify-content:space-between;
+   
 
 }
 nav .logo a{
@@ -77,10 +79,10 @@ ul{
     align-items: center;
     list-style: none;
     transition: left;
-    margin-left: 90rem ;
+    gap:2rem
 }
 ul li a{
-    padding: auto;
+    padding: 0.5rem 1rem ;
     border:2rem solid transparent;
     text-decoration: none;
     font-weight: 500;
@@ -150,3 +152,35 @@ button:hover{
 .contacto,.proyectos{
     color: var(--secondary-color);
 }
+@media (width < 525px){
+ nav .checkbox{
+    display: block;
+ }
+ ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    transition: left;
+    gap:0.5rem
+ }
+ .contNav{
+    width: 100vw; /*arregla problema de poryectos contacto ajustandolos al ancho de la pantalla*/
+    margin:auto;
+    padding:1rem 0.5rem 1rem 1rem; /*sentido horario: arriba derecha abajo izquerda*/
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 1rem;
+ }
+ 
+ul li a{
+    padding: 0.5rem 0.5rem ;
+    border:0.5rem solid transparent;
+    text-decoration: none;
+    font-weight: 200;
+    color: var(--text-dark);
+    transition:0.5s;
+}
+
+}
+
